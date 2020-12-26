@@ -78,6 +78,11 @@ export class HomePageComponent implements OnInit {
         this.noResult = true;
       }  
     }
+    else{
+      this.getData();
+      this.dataSource.sort = this.sort;
+      this.dataSource.paginator = this.paginator;
+    }
 
   }
   customSort(name?, direction?){
