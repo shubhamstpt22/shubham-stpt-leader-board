@@ -40,7 +40,7 @@ export class HomePageComponent implements OnInit {
   dataSource;
   displayedColumns: string[] = ['logo','companyName', 'industry', 'sortBy', 'totalSales', 'button'];
   searchText;
-  noResult=false; 
+  noResult=false;  
   opened=false;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
   @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
