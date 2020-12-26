@@ -1,0 +1,49 @@
+mat-toolbar
+    background-color: #ef6d5a;
+    color: white;
+mat-card
+    width: 80%
+    min-height: 450px;
+    .no-result
+        display: flex;
+        flex-direction: column;
+        min-height: 450px;
+        justify-content: center;
+        align-items: center;
+        color: grey
+        .search-icon
+            font-size: 36px !important;
+        .cmd-title
+            font-size: 30px;
+            color: #707070 !important;
+.logo
+    img
+        height: 72px;
+        width: 100px;
+.search-bar
+    padding-bottom: 8px;
+    border: 1px solid #c9c9c9;
+.title
+    font-size: 28px;
+    font-weight: 400;
+    align-items: flex-end;
+    display: flex;
+th
+    font-size: 20px;
+
+
+@media (min-width: 900px)
+    .search-bar
+        height: 80px;
+@media only screen and (max-width: 600px)
+    .title
+        margin-bottom: 16px;
+    table
+        .hide-xs
+            display : none;
+        th
+            font-size: 16px;
+    .flex-30
+        min-width: 100%; 
+    .hide-xs
+        display: none;

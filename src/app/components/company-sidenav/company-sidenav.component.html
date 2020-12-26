@@ -1,0 +1,41 @@
+<mat-toolbar class="cmd-padding pl0"> 
+    <div class="flex layout-row">
+        <div class="flex-90 logo cmd-margin ml layout-gt-xs-column"> 
+            <div class="hide-xs"> <mat-icon class="cmd-margin mt4 mrh">broken_image</mat-icon></div>
+            <div>Company Name </div>
+        </div>
+        <div class="flex layout-center cmd-margin mt4 mr cursor-pointer">
+            <mat-icon class="flex" (click)="close()"> close </mat-icon>
+        </div>
+    </div>
+</mat-toolbar> 
+<div class="layout-column" *ngIf="dataToDisplay">
+    <div class="component">
+        <mat-icon> monetization_on </mat-icon>
+        <div class="layout-column cmd-margin mth">
+            <div> Total Sales </div>
+            <div> {{dataToDisplay.totalSales}} </div>
+        </div>
+    </div>
+    <div class="component">
+        <mat-icon> shopping_cart </mat-icon>
+        <div class="layout-column cmd-margin mth">
+            <div> Add to cart </div>
+            <div> {{dataToDisplay.addToCart}}</div>
+        </div>
+    </div>
+    <div class="component">
+        <mat-icon> system_update </mat-icon>
+        <div class="layout-column cmd-margin mth">
+            <div> Downloads </div>
+            <div> {{dataToDisplay.downloads}}</div>
+        </div>
+    </div>
+    <div class="component">
+        <mat-icon> add_to_photos </mat-icon>
+        <div class="layout-column cmd-margin mth">
+            <div> User Sessions </div>
+            <div> {{dataToDisplay.userSessions}}</div>
+        </div>
+    </div>
+</div>

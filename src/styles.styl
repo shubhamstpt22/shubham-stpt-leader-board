@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.flex-90
+    width: 90%;
+
+.flex-80
+    width: 80%;
+.flex-70
+    width: 70%;
+.flex-30
+    width: 30%;
+
+.flex
+    display: flex;
+    flex: 1;
+
+.cmd-margin
+    &.mt0
+        margin-top: 0px;
+    &.mt4
+        margin-top: 4px;
+    &.mth
+        margin-top: 8px;
+    &.ml    
+        margin-left: 16px;
+    &.mrh
+        margin-right: 8px;
+    &.mr
+        margin-right: 16px;
+    &.ma24
+        margin: 24px 24px 24px 24px;
+    &.mb
+        margin-bottom: 16px;
+    &.mbh
+        margin-bottom: 8px;
+    
+.cmd-padding
+    &.pl0
+        padding-left: 0px;
+    &.pt0
+        padding-top: 0px;
+    &.pt4
+        padding-top: 4px;
+    &.pr4
+        padding-right: 4px;    
+    &.ph0
+        padding-left: 0px;
+        padding-right: 0px;
+
+    &.pah
+        padding: 8px;
+    &.pa
+        padding: 16px;
+    &.pbh
+        padding-bottom: 8px;
+
+.layout-row
+    display:flex;
+    flex-direction: row;
+
+.layout-gt-xs-column
+    display:flex; 
+    flex-direction: row;
+
+
+.layout-column
+    display:flex;
+    flex-direction: column;
+
+.layout-center
+    align-items: center;
+
+.layout-align-end
+    justify-content: flex-end
+
+.flex-center
+    display: flex;
+    justify-content: space-around;
+
+.tableView
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+.dis-t
+    display: table !important;
+
+table 
+    width: 100%;
+
+.normal-text
+    font-size: 14px;
+
+.cursor-pointer
+    cursor: pointer;
+
+.cmd-text
+    .tcs
+        color: grey;
+@media (max-width: 600px)
+    .layout-gt-xs-column
+        display: flex !important;
+        flex-direction: column !important;
